@@ -6,8 +6,10 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class mng_staff_in4 extends AppCompatActivity {
     TextView hoten,manv,gioitinh,ngaysinh,sdt,diachi,ngaylamviec,luongcb, trinhdo,chucvu,phongban;
@@ -52,7 +54,21 @@ public class mng_staff_in4 extends AppCompatActivity {
 
     private void del_dialog(String manv) {
         Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.mng_staff_del_dialog);
+        dialog.setCanceledOnTouchOutside(false);
+        nap_database db = new nap_database(this);
 
+        Button yes,no;
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                boolean kq = db.deleteNHANVIEN(manv);
+                if (kq == true) {
+                    Toast.makeText(getApplicationContext(),)
+                }
+            }
+        });
     }
 
 }

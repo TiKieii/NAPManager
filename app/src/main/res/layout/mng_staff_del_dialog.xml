@@ -21,6 +21,24 @@
         android:text="Bạn chắn xóa nhân viên này ra khỏi Naper ?"
         android:textSize="18dp"
         android:gravity="center"/>
+    <ImageButton
+        android:id="@+id/staff_del_yes_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_cancel"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:background="@null"
+        />
+    <ImageButton
+        android:id="@+id/staff_del_no_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_add"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="270dp"
+        android:background="@null"
+        />
 
 
 

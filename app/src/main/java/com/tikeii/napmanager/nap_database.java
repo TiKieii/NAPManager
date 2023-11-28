@@ -77,7 +77,7 @@ public class nap_database extends SQLiteOpenHelper {
 
     //LỆNH TẠO BẢNG CHAMCONG
     private String CreateTB_CHAMCONG = "CREATE TABLE " + TB_CHAMCONG + "(" + TB_CC_THANG + " TEXT PRIMARY KEY, " + TB_CC_NGAYLAM + " DATE," +
-            TB_CC_GIOVAO + " DATETIME," + TB_CC_NGAYCONG + " INT, " + TB_CC_NGAYPHEP + " INT, " + TB_CC_TANGCA + " INT) ";
+            TB_CC_GIOVAO + " DATETIME," + TB_CC_NGAYCONG + " INT, " + TB_CC_NGAYPHEP + " INT, " + TB_CC_TANGCA + " INT ,"+TB_NV_MANV+" TEXT REFERENCES "+"("+TB_NV+")";
 
     //TẠO CÁC BIẾN CHỨA CÁC THUỘC TÍNH CỦA BẢNG LUONH
     private static String TB_LUONG = "LUONG";
